@@ -8,3 +8,8 @@ body {
 .gap-right {
     margin-right: 15px;
 }
+
+.anchor {
+    padding-top: 55px;
+    margin-top:-55px;
+}
