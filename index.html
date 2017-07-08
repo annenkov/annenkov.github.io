@@ -127,6 +127,18 @@
           </a>]
         </li>
       </ul>
+      <h2>Talks</h2>
+      <ul>
+        <li>Towards Certified Compilation of Financial Contracts.
+          Nordic Workshop on Programming Theory(NWPT’16), November 2016.
+          [<a target="_blank" href="papers/NWPT16Slides.pdf">PDF</a>]
+        </li>
+        <li>Verifying the generation of payoff-language expressions.
+          <a target="_blank" href="http://hiperfit.dk/">HIPERFIT</a> Workshop, March 2016
+          [<a target="_blank" href="papers/HIPERFIT_Workshop_2016.pdf">PDF</a>]
+        </li>
+      </ul>
+
       <h2>Projects and repositories</h2>
       <h3><a target="_blank" href="https://github.com/annenkov/two-level">
           Two-level type theory</a></h3>
@@ -148,9 +160,9 @@
         An extension of the Contract DSL presented in
         <a target="_blank" href="https://github.com/annenkov/contracts/blob/master/doc/icfp2015.pdf">
           ICFP 2015 paper</a> with templating features, and certified compilation to a
-        simple intermediate payoff expression language (PEL). This expression language can be used to obtain so called payoff expression for using in a context of a &quot pricing engine &quot (software, that uses probabilistic modeling of possible future contract price using Monte-Carlo simulation).
-        We use Coq to prove soundness of the compiler from the Contract DSL to PEL.
-        Using Coq's code extraction feature we obtain a Haskell implementation of the compiler.
+        simple intermediate payoff expression language (PEL). This expression language can be used to obtain so called  &quotpayoff expression&quot for using in a context of a &quotpricing engine&quot (software, that uses probabilistic modeling of possible future contract price using Monte-Carlo simulation).
+        We use Coq to prove soundness of the compiler from the Contract DSL to PEL, and
+        use Coq's code extraction feature, to obtain correct Haskell implementation of the compiler.
       </p>
       <h3><a target="_blank" href="https://github.com/annenkov/stlcnorm">
         Normalisation for Simply-Typed Lambda-calculus in Coq</a>
@@ -167,6 +179,30 @@
         Haskell data type definitions, and integration with
         <a href="https://github.com/HIPERFIT/finpar">FINPAR</a>
         (high-performance pricing engine) through OpenCL code generation.
+      </p>
+      <h3><a target="_blank" href="https://github.com/annenkov/unmix">
+          UNMIX ported to Racket</a></h3>
+      <p>
+        A simple program specializer (based on partial evaluation) for a subset of Scheme,
+        originally developed by
+        <a target="_blank" href="http://pat.keldysh.ru/~roman/">Sergei Romanenko</a> in 1990-1993,
+        ported to the modern scheme-like
+        <a target="_blank" href="https://racket-lang.org/">Racket</a> language
+        to make UNMIX usable for wider audience.
+      </p>
+      <h3><a target="_blank" href="https://github.com/annenkov/unmix">
+          A minimal supercompiler for simple lazy language
+          (first-order functional language) written in Stratego/XT</a></h3>
+      <p>
+        An interpreter and minimal supercompiler for simple lazy language
+        (first-order functional language) written in Stratego/XT transformation language,
+        part of the Spoofax language workbench. Minimal supercompiler implementation
+        is inspired by the elegant Haskell implementation
+        <a target="_blank" href="https://github.com/ilya-klyuchnikov/sc-mini">SC Mini</a>.
+        Spoofax works on Eclipse platform and allows one to create full-featured
+        IDE plugin with syntax highlighting, perform semantic analysis and context completion.
+        My implementation aims to give an environment to experiment with
+        the supercompiler for educational purposes.
       </p>
     </div>
     <!-- /.container -->
