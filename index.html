@@ -128,15 +128,45 @@
         </li>
       </ul>
       <h2>Projects and repositories</h2>
+      <h3><a target="_blank" href="https://github.com/annenkov/two-level">
+          Two-level type theory</a></h3>
+      <p>
+        An implementation of two-level type theory in the Lean proof assistant.
+        Two-level type theory is a version of Martin-Löf type theory (MLTT), which
+        consists of two fragments: the fibrant fragment (Homotopy Type Theory) and
+        the strict fragment (MLTT with uniqueness of identity proofs). In our development in
+        the Lean proof assistant we demonstrate, how two-level type theory can be encoded
+        in existing proof assistant. Using the definition of category from Lean's standard
+        library, we define limits and construct general limits in the category of pretypes in the
+        strict fragment. Also, we define inverse diagrams and show how some results of the
+        theory on inverse diagrams can be internalised in two-level type theory and developed in
+        the proof assistant.
+      </p>
       <h3><a target="_blank" href="https://github.com/annenkov/contracts">
           Financial Contracts DSL</a></h3>
       <p>
-        This is extension of the Contract DSL presented in
+        An extension of the Contract DSL presented in
         <a target="_blank" href="https://github.com/annenkov/contracts/blob/master/doc/icfp2015.pdf">
           ICFP 2015 paper</a> with templating features, and certified compilation to a
         simple intermediate payoff expression language (PEL). This expression language can be used to obtain so called payoff expression for using in a context of a &quot pricing engine &quot (software, that uses probabilistic modeling of possible future contract price using Monte-Carlo simulation).
         We use Coq to prove soundness of the compiler from the Contract DSL to PEL.
         Using Coq's code extraction feature we obtain a Haskell implementation of the compiler.
+      </p>
+      <h3><a target="_blank" href="https://github.com/annenkov/stlcnorm">
+        Normalisation for Simply-Typed Lambda-calculus in Coq</a>
+      [<a href="https://annenkov.github.io/stlcnorm/Stlc.stlc.html">nice-looking coqdoc-html version</a>]</h3>
+    <p>Elegant and self-contained proof of normalisation for call-by-value
+      simply-typed lambda calculus in the Coq proof assistant.</p>
+    <h3><a target="_blank" href="https://github.com/HIPERFIT/prototype">
+          The HIPERFIT Portfolio Management Prototype</a></h3>
+      <p>
+        Haskell implementation of a simple contract management system,
+        where contracts are represented using the
+        <a href="https://github.com/annenkov/contracts">Contract DSL</a>.
+        The prototype features web-interface with automatically generated input forms from
+        Haskell data type definitions, and integration with
+        <a href="https://github.com/HIPERFIT/finpar">FINPAR</a>
+        (high-performance pricing engine) through OpenCL code generation.
       </p>
     </div>
     <!-- /.container -->
