@@ -54,40 +54,46 @@
       <div class="starter-template clearfix">
         <h1>Danil Annenkov's page</h1>
         <img src="img/DanilAnnenkov.png" alt="Photo" class="pull-left gap-right">
-        <p class="lead">Currently, I am a postdoc at INRIA Nantes, working on
-          <a href="http://coqhott.gforge.inria.fr/" target="_blank">CoqHoTT project</a> with Nicolas Tabareau</p>
+        <p class="lead">Currently, I am a postdoc at Aarhus University working on
+         verification of smart contracts with Bas Spitters</p>
         <h3>Contacts</h3>
         <p><strong>Address:</strong>
-          LINA (main site)  <br>
-          UFR de Sciences et Techniques <br>
-          2 rue de la Houssinière <br>
-          Building 34, office 216 <br>
-          44300 Nantes, France<br>
+          IT-byen Katrinebjerg <br>
+          Åbogade 34, Turing building, office 226, <br>
+          8200 Aarhus
         </p>
         <p><strong>Email</strong>: danil.v.annenkov at gmail.com</p>
       </div>
       <div id="main">
         <h2 id="research" class="anchor">Research interests</h2>
         <p>
-        I am interested in functional programming, type theory,
-        applications of proof assistants to mechanization
-        of programming language semantics and formalisation of mathematics (category theory).
-        My recent research includes formalisation of semantics of domain-specific languages
-        for finance, and a module system for a data-parallel functional programming
-        language in the Coq proof assistant.<br>
-        During my PhD I was visiting University of Nottingham, where I worked with Paolo Capriotti
-        and Nicolai Kraus on formalisation of two-level type theory
-        (Homotopy Type Theory extended with strict equality) in the Lean proof assistant.
+          I am interested in functional programming, type theory,
+          applications of proof assistants to mechanization
+          of programming language semantics and formalisation of mathematics (category theory).
+          My recent research includes formalisation of semantics of domain-specific languages
+          for finance, and a module system for a data-parallel functional programming
+          language in the Coq proof assistant.<br>
+          During my PhD I was visiting University of Nottingham, where I worked with Paolo Capriotti
+          and Nicolai Kraus on formalisation of two-level type theory
+          (Homotopy Type Theory extended with strict equality) in the Lean proof assistant.
         </p>
         <h2 id="publications" class="anchor">Publications</h2>
         <h4 id="publications-pl-typetheory" class="anchor">Programming languages, type theory and proof assistants</h4>
         <ul>
-          <li>Danil Annenkov, Martin Elsman. Certified Compilation of Financial Contracts. Accepted at PPDP’18.</li>
+          <li>Danil Annenkov, Martin Elsman. Certified Compilation of Financial Contracts. Accepted at PPDP’18.
+            [<a target="_blank" href="papers/annenkov-elsman-ppdp18.pdf">PDF</a>]
+            [<a target="_blank" href="https://dl.acm.org/citation.cfm?id=3236955">ACM</a>]
+            [<a target="_blank" href="https://github.com/annenkov/contracts">Futhark, Haskell and Coq code</a>]
+          </li>
           <li>Martin Elsman, Troels Henriksen, Danil Annenkov, Cosmin Oancea.
-            Static Interpretation of Higher-Order Modules in Futhark. Accepted at ICFP’18.
+            Static Interpretation of Higher-Order Modules in Futhark. ICFP’18.
+            [<a target="_blank" href="papers/futhark-modules-icfp18.pdf">PDF</a>]
+            [<a target="_blank" href="https://dl.acm.org/citation.cfm?id=3236792">ACM OpenAccess</a>]
+            [<a target="_blank" href="https://github.com/diku-dk/futhark-icfp18">Coq formalisation</a>]
           </li>
           <li>Adventures in Formalisation: Financial Contracts, Modules, and Two-Level Type Theory. PhD thesis, University of Copenhagen, 2018
-          [<a target="_blank" href="papers/DanilAnnenkovThesis.pdf">PDF</a>]</li>
+            [<a target="_blank" href="papers/DanilAnnenkovThesis.pdf">PDF</a>]
+            [<a target="_blank" href="https://arxiv.org/abs/1811.11317f">arXiv</a>]</li>
           <li>Danil Annenkov, Paolo Capriotti, Nicolai Kraus.
             Two-Level Type Theory and Applications. Submitted to ACM Transactions on
             Computational Logic (TOCL)
@@ -97,7 +103,7 @@
           </li>
           <li>
             Danil Annenkov and Martin Elsman. Towards Certified Compilation of Financial Contracts.
-            In Proceedings of the 28th Nordic Workshop on Programming Theory( NWPT’16 ).
+            In Proceedings of the 28th Nordic Workshop on Programming Theory (NWPT’16).
             Aalborg, DK. November, 2016
             [<a target="_blank" href="papers/NWPTPayoffLang.pdf">PDF</a>]
             [<a target="_blank" href="http://nwpt2016.cs.aau.dk/nwpt2016-proceedings.pdf"> Proceedings </a>]
@@ -171,21 +177,32 @@
           </li>
         </ul>
 
+        <h2 id="projects" class="anchor">Previous affiliations </h2>
+        <item>
+          <ul>
+            <li>Feb. 2018 - Nov. 2018. Postdoc at INRIA Nantes, working on
+              <a href="http://coqhott.gforge.inria.fr/" target="_blank">CoqHoTT project</a> with Nicolas Tabareau
+            </li>
+            <li>Nov. 2014 - Jan. 2018. PhD student at University Of Copenhagen on <a href="http://hiperfit.dk/" target="_blank">HIPERFIT project</a>
+              under the supervision of Martin Elsman
+            </li>
+          </ul>
+        </item>
         <h2 id="projects" class="anchor">Projects and repositories</h2>
         <p>
           Not exhaustive list of projects I have contributed to.
           My repositories:
-            on <a target="_blank" href="https://github.com/annenkov/">GitHub</a>,
-            on <a target="_blank" href="https://bitbucket.org/ib_soft/">Bitbucket</a>
+          on <a target="_blank" href="https://github.com/annenkov/">GitHub</a>,
+          on <a target="_blank" href="https://bitbucket.org/ib_soft/">Bitbucket</a>
         </p>
         <h3><a target="_blank" href="https://github.com/CoqHott/template-coq-forcing/tree/sprop">Forcing translation in Template Coq</a></h3>
-        <p>Implementation of the CBN forcing translation using typed meta-programing facilities of
+        <p>Implementation of the CBN forcing translation using typed meta-programming facilities of
           Template Coq. Based on the OCaml forcing translation plugin (by Jaber, Pédrot, Sozeau,
           Lewertowski and Tabareau, <a target="_blank"  href="https://github.com/CoqHott/coq-forcing"> link to the repo
           </a>).
           Current implementation uses the version of Coq supporting definitional proof-irrelevance
           (by Gaëtan Gilbert, <a target="_blank"  href="https://github.com/SkySkimmer/coq"> link to the repo </a>).
-          </p>
+        </p>
         <h3><a target="_blank" href="https://github.com/annenkov/two-level">
             Two-level type theory</a></h3>
         <p>
@@ -205,7 +222,7 @@
         <p>
           An extension of the Contract DSL presented in
           <a target="_blank" href="https://github.com/annenkov/contracts/blob/master/doc/icfp2015.pdf">
-          ICFP 2015 paper</a> with templating features, and certified compilation to a
+            ICFP 2015 paper</a> with templating features, and certified compilation to a
           simple intermediate payoff expression language (PEL). This expression language can be used to obtain so called
           &quotpayoff expression&quot for using in a context of a &quotpricing engine&quot
           (software, that uses probabilistic modeling of possible future contract price using Monte-Carlo simulation).
@@ -236,29 +253,28 @@
           <a target="_blank" href="http://pat.keldysh.ru/~roman/">Sergei Romanenko</a> in 1990-1993,
           ported to the modern scheme-like
           <a target="_blank" href="https://racket-lang.org/">Racket</a> language
-          to make UNMIX usable for wider audience.
+          to make UNMIX usable for a wider audience.
         </p>
-        <h3><a target="_blank" href="https://github.com/annenkov/unmix">
+        <h3><a target="_blank" href="https://github.com/annenkov/stratego-sll">
             A minimal supercompiler for simple lazy language
             (first-order functional language) written in Stratego/XT</a></h3>
         <p>
-          An interpreter and minimal supercompiler for simple lazy language
-          (first-order functional language) written in Stratego/XT transformation language,
-          part of the Spoofax language workbench. Minimal supercompiler implementation
-          is inspired by the elegant Haskell implementation
+          An interpreter and a minimal supercompiler for SLL (Simple Lazy Language -
+          first-order functional language) written in Stratego/XT transformation language,
+          part of the <a target="_blank" href="https://www.metaborg.org/en/latest/">Spoofax language workbench</a>.
+          Minimal supercompiler implementation is inspired by the elegant Haskell implementation
           <a target="_blank" href="https://github.com/ilya-klyuchnikov/sc-mini">SC Mini</a>.
-          Spoofax works on Eclipse platform and allows one to create full-featured
+          Spoofax works on Eclipse platform and allows one to create a full-featured
           IDE plugin with syntax highlighting, perform semantic analysis and context completion.
-          My implementation aims to give an environment to experiment with
-          the supercompiler for educational purposes.
+          My implementation aims to give an environment to experiment with the supercompiler for educational purposes.
         </p>
+        <h2 id="CV" class="anchor">CV</h2>
       </div>
-      <h2 id="CV" class="anchor">CV</h2>
       <p>My CV in PDF format is available <a target="_blank" href="docs/CV_Annenkov.pdf">here</a>
     </div>
     <div id="footer">
       <div class="container">
-        <p class="text-muted">Danil Annenkov, 2017</p>
+        <p class="text-muted">Danil Annenkov, 2019</p>
       </div>
     </div>
    <!-- /.container -->
