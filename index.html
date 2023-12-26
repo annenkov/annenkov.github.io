@@ -55,23 +55,23 @@
       <div class="starter-template clearfix">
         <h1>Danil Annenkov's page</h1>
         <img src="img/DanilAnnenkov.png" alt="Photo" class="pull-left gap-right">
-        <p class="lead">Currently, I am a postdoc at Aarhus University working on
-         verification of smart contracts with <a href="https://www.cs.au.dk/~spitters/" target="_blank">Bas Spitters</a></p>
-        <h3>Contacts</h3>
-        <p><strong>Address:</strong>
-          IT-byen Katrinebjerg <br>
-          Åbogade 34, Nygaard Building (5335), office 390, <br>
-          8200 Aarhus
+        <p class="lead">
+          From September 2022, I am a Senior Scientist at <a target="_blank" href="https://www.concordium.com/">Concordium</a> working on smart contract technology and formal verification.
         </p>
+        <p class="lead">
+        Before Concordium, I was a postdoc at Aarhus University working on verification of smart contracts with <a href="https://www.cs.au.dk/~spitters/" target="_blank">Bas Spitters</a></p>
+        <h3>Contacts</h3>
         <p><strong>Email</strong>: danil.v.annenkov at gmail.com</p>
-        <p><a target="_blank" href="https://scholar.google.com/citations?user=JjtxzfkAAAAJ&hl=en">Google Scholar profile</a>,
+        <p>
+          <a target="_blank" href="https://github.com/annenkov/">My GitHub</a>,
+          <a target="_blank" href="https://scholar.google.com/citations?user=JjtxzfkAAAAJ&hl=en">Google Scholar profile</a>,
           <a target="_blank" href="https://www.researchgate.net/profile/Danil_Annenkov">ResearchGate profile</a>,
           <a target="_blank" href="https://arxiv.org/a/annenkov_d_1.html">arXiv profile</a>,
           <a target="_blank" href="https://orcid.org/0000-0001-8278-3069">ORCID</a>,
           <a target="_blank" href="https://dblp.org/pid/200/7942.html">dblp</a></p>
       </div>
       <div id="main">
-        <h2 id="research" class="anchor">Research interests</h2>
+        <h2 id="research" class="anchor">Interests</h2>
         <p>
           I am interested in functional programming, type theory,
           applications of proof assistants to mechanization
@@ -85,6 +85,91 @@
           (Homotopy Type Theory extended with strict equality) in the Lean proof assistant. <br>
           I spent a year at INRIA Nantes working with Nicolas Tabareau on formalising the forcing translation in MetaCoq.
         </p>
+        <h2 id="projects" class="anchor">Projects and repositories</h2>
+          <p>
+            Not exhaustive list of projects I have contributed to.
+            My repositories on <a target="_blank" href="https://github.com/annenkov/">GitHub</a>.
+          </p>
+          <h4><a target="_blank" href="https://github.com/annenkov/trace-monoids">Trace monoids in Cubical Agda</a></h4>
+          <p>A definition of the trace monoid (free partially commutative monoid) using HITs. Some simple examples, including reasoning about database transaction schedules.</p>
+          <h4><a target="_blank" href="https://github.com/CoqHott/template-coq-forcing/tree/sprop">Forcing translation in Template Coq</a></h4>
+          <p>Implementation of the CBN forcing translation using typed meta-programming facilities of
+            Template Coq. Based on the OCaml forcing translation plugin (by Jaber, Pédrot, Sozeau,
+            Lewertowski and Tabareau, <a target="_blank"  href="https://github.com/CoqHott/coq-forcing"> link to the repo
+            </a>).
+            Current implementation uses the version of Coq supporting definitional proof-irrelevance
+            (by Gaëtan Gilbert, <a target="_blank"  href="https://github.com/SkySkimmer/coq"> link to the repo </a>).
+          </p>
+        <h4><a target="_blank" href="https://github.com/annenkov/two-level">
+            Two-level type theory</a></h4>
+        <p>
+          An implementation of two-level type theory in the Lean proof assistant.
+          Two-level type theory is a version of Martin-Löf type theory (MLTT), which
+          consists of two fragments: the fibrant fragment (Homotopy Type Theory) and
+          the strict fragment (MLTT with uniqueness of identity proofs). In our development in
+          the Lean proof assistant we demonstrate, how two-level type theory can be encoded
+          in existing proof assistant. Using the definition of category from Lean's standard
+          library, we define limits and construct general limits in the category of pretypes in the
+          strict fragment. Also, we define inverse diagrams and show how some results of the
+          theory of inverse diagrams can be internalised in two-level type theory and developed in
+          the proof assistant.
+        </p>
+        <h4><a target="_blank" href="https://github.com/annenkov/contracts">
+            Financial Contracts DSL</a></h4>
+        <p>
+          An extension of the Contract DSL presented in
+          <a target="_blank" href="https://github.com/annenkov/contracts/blob/master/doc/icfp2015.pdf">
+            ICFP 2015 paper</a> with templating features, and certified compilation to a
+          simple intermediate payoff expression language (PEL). This expression language can be used to obtain so called
+          &quot;payoff expression&quot; for using in a context of a &quot;pricing engine&quot;
+          (software, that uses probabilistic modeling of possible future contract price using Monte-Carlo simulation).
+          We use Coq to prove soundness of the compiler from the Contract DSL to PEL, and
+          use Coq's code extraction feature, to obtain correct Haskell implementation of the compiler.
+        </p>
+        <h4><a target="_blank" href="https://github.com/annenkov/stlcnorm">
+            Normalisation for Simply-Typed Lambda-calculus in Coq</a>
+          [<a href="https://annenkov.github.io/stlcnorm/Stlc.stlc.html">nice-looking coqdoc-html version</a>]</h4>
+        <p>An elegant and self-contained proof of normalisation for call-by-value
+          simply-typed lambda calculus using Tait's method in the Coq proof assistant. Nominal representation of variables. Categorical semantics of the simply-typed lambda calculus. </p>
+        <h4><a target="_blank" href="https://github.com/HIPERFIT/prototype">
+            The HIPERFIT Portfolio Management Prototype</a></h4>
+        <p>
+          Haskell implementation of a simple contract management system,
+          where contracts are represented using the
+          <a href="https://github.com/annenkov/contracts">Contract DSL</a>.
+          The prototype features web-interface with automatically generated input forms from
+          Haskell data type definitions, and integration with
+          <a href="https://github.com/HIPERFIT/finpar">FINPAR</a>
+          (high-performance pricing engine) through OpenCL code generation.
+        </p>
+        <h4><a target="_blank" href="https://github.com/annenkov/unmix">
+            UNMIX ported to Racket</a></h4>
+        <p>
+          A simple program specializer (based on partial evaluation) for a subset of Scheme,
+          originally developed by
+          <a target="_blank" href="http://pat.keldysh.ru/~roman/">Sergei Romanenko</a> in 1990-1993,
+          ported to the modern scheme-like
+          <a target="_blank" href="https://racket-lang.org/">Racket</a> language
+          to make UNMIX usable for a wider audience.
+        </p>
+        <h4><a target="_blank" href="https://github.com/annenkov/stratego-sll">
+            A minimal supercompiler for simple lazy language
+            (first-order functional language) written in Stratego/XT</a></h4>
+        <p>
+          An interpreter and a minimal supercompiler for SLL (Simple Lazy Language -
+          first-order functional language) written in Stratego/XT transformation language,
+          part of the <a target="_blank" href="https://www.metaborg.org/en/latest/">Spoofax language workbench</a>.
+          Minimal supercompiler implementation is inspired by the elegant Haskell implementation
+          <a target="_blank" href="https://github.com/ilya-klyuchnikov/sc-mini">SC Mini</a>.
+          Spoofax works on Eclipse platform and allows one to create a full-featured
+          IDE plugin with syntax highlighting, perform semantic analysis and context completion.
+          My implementation aims to give an environment to experiment with the supercompiler for educational purposes.
+        </p>
+        <h4><a target="_blank" href=" https://github.com/annenkov/haskell-bio">
+            Some bioinformatics algorithms in Haskell </a></h4>
+          <p>
+            Implementation of brute-force Regulatory Motifs Finding algorithm (formulated as a median string problem) with two branch-and-bound strategies.
+          </p>
           <h2 id="publications" class="anchor">Publications</h2>
           <h4 id="publications-pl-typetheory" class="anchor">Programming languages, type theory and proof assistants</h4>
           <ul>
@@ -245,16 +330,17 @@
           </li>
         </ul>
 
-        <h2 id="activities" class="anchor">Activities</h2>
+        <h2 id="activities" class="anchor">Academic activities</h2>
         <ul>
           <li>Spring 2021. PC member of <a href="https://seim-conf.org/en/" target="_blank">Software Engineering and Information Management (SEIM’21)</a> conference.</li>
           <li>Fall 2019 - spring 2021. Organising the <a href="https://logsem.github.io/seminar/" target="_blank">LogSem seminar</a> at Aarhus University,
             <a href="https://logsem.github.io/" target="_blank">Logic and Semantics group</a>.</li>
         </ul>
 
-
-          <h2 id="affiliations" class="anchor">Previous affiliations </h2>
+          <h2 id="affiliations" class="anchor">Previous affiliations</h2>
           <ul>
+            <li>Dec. 2018 - Sep. 2022. Postdoc at COBRA Reserach Centre, Aarhus University, working on smart contract verification with Bas Spitters
+            </li>
             <li>Feb. 2018 - Nov. 2018. Postdoc at INRIA Nantes, working on
               <a href="http://coqhott.gforge.inria.fr/" target="_blank">CoqHoTT project</a> with Nicolas Tabareau
             </li>
@@ -262,100 +348,13 @@
               under the supervision of Martin Elsman
             </li>
           </ul>
-          <h2 id="projects" class="anchor">Projects and repositories</h2>
-          <p>
-            Not exhaustive list of projects I have contributed to.
-            My repositories:
-            on <a target="_blank" href="https://github.com/annenkov/">GitHub</a>,
-            on <a target="_blank" href="https://bitbucket.org/ib_soft/">Bitbucket</a>
-          </p>
-          <h3><a target="_blank" href="https://github.com/annenkov/trace-monoids">Trace monoids in Cubical Agda</a></h3>
-          <p>A definition of the trace monoid (free partially commutative monoid) using HITs. Some simple examples, including reasoning about database transaction schedules.</p>
-          <h3><a target="_blank" href="https://github.com/CoqHott/template-coq-forcing/tree/sprop">Forcing translation in Template Coq</a></h3>
-          <p>Implementation of the CBN forcing translation using typed meta-programming facilities of
-            Template Coq. Based on the OCaml forcing translation plugin (by Jaber, Pédrot, Sozeau,
-            Lewertowski and Tabareau, <a target="_blank"  href="https://github.com/CoqHott/coq-forcing"> link to the repo
-            </a>).
-            Current implementation uses the version of Coq supporting definitional proof-irrelevance
-            (by Gaëtan Gilbert, <a target="_blank"  href="https://github.com/SkySkimmer/coq"> link to the repo </a>).
-          </p>
-        <h3><a target="_blank" href="https://github.com/annenkov/two-level">
-            Two-level type theory</a></h3>
-        <p>
-          An implementation of two-level type theory in the Lean proof assistant.
-          Two-level type theory is a version of Martin-Löf type theory (MLTT), which
-          consists of two fragments: the fibrant fragment (Homotopy Type Theory) and
-          the strict fragment (MLTT with uniqueness of identity proofs). In our development in
-          the Lean proof assistant we demonstrate, how two-level type theory can be encoded
-          in existing proof assistant. Using the definition of category from Lean's standard
-          library, we define limits and construct general limits in the category of pretypes in the
-          strict fragment. Also, we define inverse diagrams and show how some results of the
-          theory of inverse diagrams can be internalised in two-level type theory and developed in
-          the proof assistant.
-        </p>
-        <h3><a target="_blank" href="https://github.com/annenkov/contracts">
-            Financial Contracts DSL</a></h3>
-        <p>
-          An extension of the Contract DSL presented in
-          <a target="_blank" href="https://github.com/annenkov/contracts/blob/master/doc/icfp2015.pdf">
-            ICFP 2015 paper</a> with templating features, and certified compilation to a
-          simple intermediate payoff expression language (PEL). This expression language can be used to obtain so called
-          &quot;payoff expression&quot; for using in a context of a &quot;pricing engine&quot;
-          (software, that uses probabilistic modeling of possible future contract price using Monte-Carlo simulation).
-          We use Coq to prove soundness of the compiler from the Contract DSL to PEL, and
-          use Coq's code extraction feature, to obtain correct Haskell implementation of the compiler.
-        </p>
-        <h3><a target="_blank" href="https://github.com/annenkov/stlcnorm">
-            Normalisation for Simply-Typed Lambda-calculus in Coq</a>
-          [<a href="https://annenkov.github.io/stlcnorm/Stlc.stlc.html">nice-looking coqdoc-html version</a>]</h3>
-        <p>An elegant and self-contained proof of normalisation for call-by-value
-          simply-typed lambda calculus using Tait's method in the Coq proof assistant. Nominal representation of variables. Categorical semantics of the simply-typed lambda calculus. </p>
-        <h3><a target="_blank" href="https://github.com/HIPERFIT/prototype">
-            The HIPERFIT Portfolio Management Prototype</a></h3>
-        <p>
-          Haskell implementation of a simple contract management system,
-          where contracts are represented using the
-          <a href="https://github.com/annenkov/contracts">Contract DSL</a>.
-          The prototype features web-interface with automatically generated input forms from
-          Haskell data type definitions, and integration with
-          <a href="https://github.com/HIPERFIT/finpar">FINPAR</a>
-          (high-performance pricing engine) through OpenCL code generation.
-        </p>
-        <h3><a target="_blank" href="https://github.com/annenkov/unmix">
-            UNMIX ported to Racket</a></h3>
-        <p>
-          A simple program specializer (based on partial evaluation) for a subset of Scheme,
-          originally developed by
-          <a target="_blank" href="http://pat.keldysh.ru/~roman/">Sergei Romanenko</a> in 1990-1993,
-          ported to the modern scheme-like
-          <a target="_blank" href="https://racket-lang.org/">Racket</a> language
-          to make UNMIX usable for a wider audience.
-        </p>
-        <h3><a target="_blank" href="https://github.com/annenkov/stratego-sll">
-            A minimal supercompiler for simple lazy language
-            (first-order functional language) written in Stratego/XT</a></h3>
-        <p>
-          An interpreter and a minimal supercompiler for SLL (Simple Lazy Language -
-          first-order functional language) written in Stratego/XT transformation language,
-          part of the <a target="_blank" href="https://www.metaborg.org/en/latest/">Spoofax language workbench</a>.
-          Minimal supercompiler implementation is inspired by the elegant Haskell implementation
-          <a target="_blank" href="https://github.com/ilya-klyuchnikov/sc-mini">SC Mini</a>.
-          Spoofax works on Eclipse platform and allows one to create a full-featured
-          IDE plugin with syntax highlighting, perform semantic analysis and context completion.
-          My implementation aims to give an environment to experiment with the supercompiler for educational purposes.
-        </p>
-        <h3><a target="_blank" href=" https://github.com/annenkov/haskell-bio">
-            Some bioinformatics algorithms in Haskell </a></h3>
-          <p>
-            Implementation of brute-force Regulatory Motifs Finding algorithm (formulated as a median string problem) with two branch-and-bound strategies.
-          </p>
         <h2 id="CV" class="anchor">CV</h2>
       </div>
       <p>My CV in PDF format is available <a target="_blank" href="docs/CV_Annenkov.pdf">here</a>
     </div>
     <div id="footer">
       <div class="container">
-        <p class="text-muted">Danil Annenkov, 2017-2021</p>
+        <p class="text-muted">Danil Annenkov, 2017-2023</p>
       </div>
     </div>
    <!-- /.container -->
